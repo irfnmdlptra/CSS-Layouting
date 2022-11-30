@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            padding:0 ;
+        }
+        img{
+              filter: blur(10px) grayscale(1);
+              transition: 1s;
+
+        }
+        img:hover{
+            filter: blur(0) grayscale(0);
+  
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+      
+        }
+        .kotak:hover {
+            transform: scale(1.5, 2) rotate(180deg) rotateY(180deg)  rotateX(180deg) skewY(-30deg)  translate(50px, 100px);
+   
+           
+        }
+        .conten {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid black;
+        }
+
+
+        .bundar {
+            width: 150px;
+            height: 150px;
+            background-color: salmon;
+            transition: 1s;
+        }
+
+        .conten:hover .bundar  {
+            transform: rotate(180deg);
+            margin-left: 800px;
+            background-color: blueviolet;
+        } 
+    </style>
+</head>
+<body>
+     <img src="../img/mtr.jpg" alt="">
+    <div class="kotak"> </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam alias consectetur in a, quas assumenda laudantium soluta saepe suscipit omnis inventore facilis.</p>
+
+    <div class="conten">
+    <div class="bundar"></div>
+</div>
+</body>
+</html>

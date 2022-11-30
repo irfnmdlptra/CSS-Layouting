@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bundar {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transition: 2s ease all;
+            animation: animasiKotak 3s ease infinite alternate forwards paused;
+        }
+  
+
+        @keyframes animasiKotak{
+            0%{
+                width: 200px;
+            }
+
+            50% {
+                width: 500px;
+                height: 200px;
+            }
+
+            100%{
+                width: 500px;
+                height: 500px;
+            }
+        }
+        .container {
+            width: 700px;
+            border: 3px solid black;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(114, 250, 220);
+            transition: all 1s ease;
+            text-align: center;
+            line-height:100px ;
+            margin: 5px 0;
+        }
+        .kotak1{
+            transition: all 3s ease;
+        }
+        .kotak2{
+            transition: all 3s ease-in;
+        }
+        .kotak3{
+            transition: all 3s ease-out;
+        }
+        .kotak4{
+            transition: all 3s ease-in-out;
+        }
+        .kotak5{
+            transition: all 3s linear;
+        }
+
+
+        .container:hover .kotak{
+            transform: rotate(720deg);
+            margin-left: 600px;
+            background-color: rgb(225, 65, 206);
+        }
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="bundar"></div>
+
+    <div class="container">
+        <div class="kotak kotak1">ease</div>
+        <div class="kotak kotak2">ease-in</div>
+        <div class="kotak kotak3">ease-out</div>
+        <div class="kotak kotak4">ease-in-out</div>
+        <div class="kotak kotak2">linear</div>
+   
+    </div>
+</body>
+</html>

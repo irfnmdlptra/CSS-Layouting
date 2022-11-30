@@ -1,0 +1,51 @@
+div {
+	width: 300px;
+	height: 300px;
+	background-color: lightcoral;
+	margin:20px auto;
+	padding-left: 20px;
+	padding: 10px 20px 30px 40px
+
+}
+
+.satu {
+	width: 300px;
+	height: 300px;
+	background-color: lightcoral;
+	margin:20px auto;
+	padding-left: 20px;
+	padding: 10px 20px 30px 40px;
+	border: 25px solid seagreen;
+	
+
+}
+
+.color {
+	border: 25px double black;
+}
+
+.mar {
+	border: 25px dotted yellow;
+}
+
+.mak {
+	border: 25px dashed red;}
+
+
+h3 {
+	width: 570px;
+	margin: 10px auto;
+}
+
+.lima {
+	background-color: royalblue;
+	padding: 10px;
+	border: 5px solid black;
+}
+
+.nam {
+	color: lightgreen;
+	padding: 30px;
+	border: 10px dashed orange;
+
+}

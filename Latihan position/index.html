@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coba Position</title>
+	<style>
+
+		body {
+			height: 200px;
+		}
+
+		h3	{
+			font-family: arial;
+			font-size: 30px;
+		}
+
+		h4	{
+			font-family: sans-serif;
+			font-size: 18px;
+		}
+		li {
+			font-size: 25px;
+			font-family: arial;
+			display: inline-block;
+		}
+
+		div {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+		}
+
+		.satu {
+			background-color: lightgreen;
+		}
+
+		.dua {
+			background-color: violet;
+			position: absolute;
+			top: 0;
+			right: 0;
+;
+		}
+
+		.tiga {
+			background-color: gold;
+		}
+
+		.container {
+			width: 450px;
+			height: 550px;
+			border: 5px solid black;
+			position: relative;
+		}
+
+		.empat {
+			background-color: lightgreen;
+		}
+
+		.lima {
+			background-color: violet;
+			width: 100%;
+			height: 40px;
+			position: fixed;
+			top: 0;
+			right: 0;
+;
+		}
+
+		.enam {
+			background-color: gold;
+		}
+
+		.mobil {
+			width: 450px;
+			height: 550px;
+			border: 5px solid black;
+			position: relative;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<br><br><br><br><br><br><br>
+	<h3>CSS Position</h3>
+<hr>
+	
+<p>
+	<ul>
+		<li>Static</li>
+		<h4>static adalah nilai default dari tiap2 elemen ketika tdk diberi properti position</h4>
+
+		<h4>menggunakan position selain static [non-static], akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya</h4>
+
+		<h4>elelmen yg diberi position selain static dapat menggunakan properti top,left,bottom dan right untuk mengatur posisinya</h4>
+		</ul>
+		<ul>
+			<li>Relative</li>
+		<h4>ketika kita menggerakkan elemen dengan posisi relative [menggunakan properti top,left,bottom dan right], ruang yg ditempati oleh elemen tersebut masih ada</h4>
+
+		<h4>ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya</h4>
+
+		<h4>jika kita memberi properti top: 0, dan left: 0; maka elemen tidak berubah posisinya</h4>
+		<br>
+
+
+		<br><br><br><br>
+	</ul>
+	<ul>
+		<li>Obsolute</li>
+		<h4>ketika kita menmggerakkan elemen dengan posisi absolute [menggunakan properti top, left, bottom dan right] ruang yg ditempati oleh elemen tersebut dianggap tidak ad</h4>
+
+		<br>
+
+		
+	</ul>
+	<ul>
+		<li>Fixed</li>
+	</ul>
+</p>	
+	<div class="container">
+		<div class="satu"></div>
+		<div class="dua"></div>
+		<div class="tiga"></div>
+	</div>
+	<br>	<br><br>
+		<div class="mobil">
+		<div class="empat"></div>
+		<div class="lima"></div>
+		<div class="enam"></div>
+	</div>
+		
+		
+
+</body>
+</html>
